@@ -6,23 +6,23 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:44:59 by amoepi            #+#    #+#             */
-/*   Updated: 2019/05/30 11:35:14 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/06 14:13:00 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strncpy(char *s1, const char *s2, size_t n)
+char	*ft_strncpy(char *s1, const char *s2, size_t len)
 {
 	size_t i;
 
 	i = 0;
-	while (s2[i] != '\0' && i < n)
+	while (s2[i] != '\0' && i < len)
 	{
 		s1[i] = s2[i];
 		i++;
 	}
-	while (i < n)
+	while (i < len)
 	{
 		s1[i] = '\0';
 		i++;
