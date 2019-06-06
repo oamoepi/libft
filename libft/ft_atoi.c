@@ -6,11 +6,11 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:51:56 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 14:30:50 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/06 17:38:44 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

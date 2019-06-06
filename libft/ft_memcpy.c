@@ -6,11 +6,11 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:17:53 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 13:59:04 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/06 17:30:48 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *restrict dst,
 		const void *restrict src, size_t n)

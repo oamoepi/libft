@@ -6,11 +6,11 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 17:26:52 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 14:23:46 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/06 17:47:39 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strstr(const char *s1, const char *s2)
 {
