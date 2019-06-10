@@ -16,9 +16,10 @@ void	*ft_memalloc(size_t size)
 {
 	void *fresh;
 
-	if (fresh = (void *)malloc(size * sizeof(void)))
+	fresh = malloc(size);
+	if (fresh && size)
 	{
-		ft_bzero(fresh, size);
+		ft_bzero((void *)fresh, size);
 		return (fresh);
 	}
 	return (NULL);
