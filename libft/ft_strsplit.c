@@ -6,15 +6,15 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:34:31 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/10 16:50:08 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/10 17:49:30 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		**ft_strsplit(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
-	char count;
+	int count;
 
 	count = 0;
 	while (*s)
