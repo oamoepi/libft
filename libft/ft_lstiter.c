@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 17:41:49 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/10 17:53:26 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/12 16:08:31 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 	while (lst != NULL)
 	{
 		f(lst);
-		lst =lst->next;
+		lst = lst->next;
 	}
 }
