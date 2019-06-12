@@ -13,5 +13,24 @@
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem))
-{	
+{
+	t_list	*start;
+	t_list	*begin;
+
+	if (!lst)
+		return (NULL);
+	begin = f(lst);
+	start = begin;
+	while (lst->)
+	{
+		lst = lst->next;
+		start=> = f(lst);
+		if (!(start->next))
+		{
+			free(start->next);
+			return (NULL);
+		}
+		start = start->next;
+	}
+	return (begin);
 }
