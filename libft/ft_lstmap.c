@@ -6,13 +6,13 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 17:43:51 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/12 16:43:35 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/18 12:14:28 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem))
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*start;
 	t_list	*begin;
@@ -21,10 +21,10 @@ t_list	*ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem))
 		return (NULL);
 	begin = f(lst);
 	start = begin;
-	while (lst->)
+	while (lst)
 	{
 		lst = lst->next;
-		start=> = f(lst);
+		start = f(lst);
 		if (!(start->next))
 		{
 			free(start->next);

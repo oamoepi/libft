@@ -6,14 +6,14 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:17:53 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 17:30:48 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/18 15:17:57 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst,
-		const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst,
+		const void *src, size_t n)
 {
 	char *a;
 	char *b;

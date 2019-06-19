@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:15:10 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 18:06:04 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/18 15:32:41 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	int i;
+	char	*new;
 
-	i = 0;
-	while (src[i] != '\0' || dst[i] != '\0')
+	new = dst;
+	while (*src != '\0')
 	{
-		dst[i] = src[i];
-		i++;
+		*dst = *src;
+		dst++;
+		src++;
 	}
-	return (dst);
+	*dst = '\0';
+	return (new);
 }

@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:42:24 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/06 17:34:27 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/18 15:40:07 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
-	int	i;
-	int j;
+	int	a;
+	int b;
 
-	i = 0;
-	j = 0;
-	while (s1[i] != '\0')
+	a = 0;
+	b = 0;
+	while (s1[a] != '\0')
 	{
-		i++;
+		a++;
 	}
-	while (s2[i] != '\0')
+	while (s2[b] != '\0')
 	{
-		s1[i + j] = s2[j];
-		j++;
+		s1[a + b] = s2[b];
+		b++;
 	}
-	s1[i + j] = '\0';
+	s1[a + b] = '\0';
 	return (s1);
 }

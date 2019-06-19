@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 17:40:06 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/12 16:50:14 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/14 16:20:36 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *list;
-	*list = new;
+	t_list	*newbie;
+
+	if (!(new) || !(alst))
+		return ;
+	newbie = new;
+	newbie->next = *alst;
+	*alst = new;
 }
