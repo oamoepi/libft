@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:26:32 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/10 16:18:53 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/24 14:41:32 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	if (!(new = (char*)malloc(ft_strlen(s) + 1)))
 		return (NULL);
-	while (s[1])
+	while (s[i])
 	{
 		new[i] = (*f)(i, (s[i]));
 		i++;
