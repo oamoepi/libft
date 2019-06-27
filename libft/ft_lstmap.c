@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/10 17:43:51 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/24 16:12:50 by amoepi           ###   ########.fr       */
+/*   Created: 2019/06/25 16:33:00 by amoepi            #+#    #+#             */
+/*   Updated: 2019/06/25 18:13:14 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,16 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list	*start;
-	t_list	*begin;
+	t_list *new_list;
 
-	if (!lst)
-		return (NULL);
-	begin = f(lst);
-	start = begin;
-	while (lst)
+	while (lst != NULL)
 	{
+		f(lst);
 		lst = lst->next;
-		start = f(lst);
-		if (!(start->next))
-		{
-			free(start->next);
-			return (NULL);
-		}
-		start = start->next;
 	}
-	return (begin);
+	if (!(new_list = (t_list *)malloc(sizeof(t_list))))
+		return (NULL);
+	new_list = lst;
+	return (new_list);
+	free(new_list);
 }

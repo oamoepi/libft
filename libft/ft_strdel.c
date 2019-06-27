@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 15:58:59 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/10 15:19:32 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/27 18:50:00 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	if (*as == NULL)
-		free(*as);
+	if (!as || !*as)
+		return ;
+	free(*as);
 	*as = NULL;
 	return ;
 }

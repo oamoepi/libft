@@ -6,32 +6,38 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 15:32:57 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/24 15:36:17 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/28 01:25:49 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+static char	*function(void)
+{
+	char	*str;
+
+	if (!(str = (char *)malloc(sizeof(char))))
+		return (NULL);
+	*str = '\0';
+	return (str);
+}
+
+char		*ft_strtrim(char const *s)
 {
 	int		i;
 	int		len;
 	char	*str;
 
 	i = 0;
-	len = 0;
 	while ((*s == ' ' || *s == '\n' || *s == '\t') && *s != '\0')
 		s++;
 	if (*s == '\0')
 	{
-		str = (char *)malloc(sizeof(char));
-		*str = '\0';
+		str = function();
 		return (str);
 	}
-	while (s[len] != '\0')
-		len++;
-	len--;
-	while (s[len] == ' ' || s[len] == '\t' || s[len] == '\n')
+	len = ft_strlen(s) - 1;
+	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
 		len--;
 	len++;
 	if (!(str = (char *)malloc(sizeof(char) * len + 1)))
