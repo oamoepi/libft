@@ -6,7 +6,7 @@
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 01:49:11 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/28 01:57:36 by amoepi           ###   ########.fr       */
+/*   Updated: 2019/06/28 02:11:51 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int			ft_atoi(const char *str)
 		i++;
 	operator = 1;
 	if (str[i] == '-')
-		operator == -1;
+		operator = -1;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
 	while ((str[i] >= '0') && (str[i] <= '9'))
