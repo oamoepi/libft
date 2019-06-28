@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: amoepi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/29 17:51:56 by amoepi            #+#    #+#             */
-/*   Updated: 2019/06/27 21:58:35 by amoepi           ###   ########.fr       */
+/*   Created: 2019/06/28 01:49:11 by amoepi            #+#    #+#             */
+/*   Updated: 2019/06/28 01:57:36 by amoepi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int			ft_atoi(const char *str)
 	digit = 0;
 	lng = 0;
 	while ((str[i] == '\n') || (str[i] == '\t') || (str[i] == '\v')
-			|| (str[i] == ' ') || (str[i] == '\f') || (str[i] == '\r'))
+			|| (str[i] == '\f') || (str[i] == '\r') || (str[i] == ' '))
 		i++;
 	operator = 1;
 	if (str[i] == '-')
-		operator = -1;
+		operator == -1;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
 	while ((str[i] >= '0') && (str[i] <= '9'))
